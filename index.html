@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gasto · Soporte</title>
+  <meta name="description" content="Ayuda y contacto de Gasto, la app para controlar suscripciones y gastos recurrentes en iPhone.">
+  <style>
+:root {
+  --bg: #ffffff;
+  --fg: #1d1d1f;
+  --muted: #6e6e73;
+  --card: #f5f5f7;
+  --accent: #1f9d55;
+  --line: #e5e5ea;
+  color-scheme: light dark;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #000000;
+    --fg: #f5f5f7;
+    --muted: #a1a1a6;
+    --card: #1c1c1e;
+    --accent: #34c759;
+    --line: #2c2c2e;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font: 17px/1.55 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+main { max-width: 720px; margin: 0 auto; padding: 48px 16px 64px; }
+header { display: flex; align-items: center; gap: 14px; margin-bottom: 8px; }
+.logo {
+  width: 56px; height: 56px; border-radius: 13px; flex: none;
+  background: linear-gradient(160deg, #3ad07a, #1f9d55);
+  display: grid; place-items: center; color: #fff; font-weight: 700; font-size: 28px;
+}
+h1 { font-size: 34px; line-height: 1.15; margin: 0; letter-spacing: -0.02em; }
+h2 { font-size: 24px; margin: 40px 0 8px; letter-spacing: -0.01em; }
+h3 { font-size: 18px; margin: 24px 0 4px; }
+p, li { color: var(--fg); }
+.muted { color: var(--muted); }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.card { background: var(--card); border-radius: 16px; padding: 20px; margin: 20px 0; }
+nav.lang { margin: 16px 0 8px; display: flex; gap: 16px; font-size: 15px; }
+hr { border: 0; border-top: 1px solid var(--line); margin: 48px 0; }
+footer { margin-top: 48px; font-size: 14px; color: var(--muted); }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="logo">€</div>
+    <div>
+      <h1>Gasto</h1>
+      <div class="muted">Suscripciones y gastos recurrentes</div>
+    </div>
+  </header>
+  <nav class="lang"><a href="#es">Español</a><a href="#en">English</a><a href="privacidad.html">Privacidad · Privacy</a></nav>
+
+  <section id="es">
+    <h2>Soporte</h2>
+    <div class="card">
+      ¿Tienes una duda, un problema o una idea? Escríbeme a
+      <a href="mailto:nader.yalal@gmail.com?subject=Gasto">nader.yalal@gmail.com</a>.
+      Respondo normalmente en uno o dos días.
+    </div>
+
+    <h3>¿Cómo paso mis datos a un iPhone nuevo?</h3>
+    <p>Gasto guarda una copia en tu iCloud privado. Inicia sesión con el mismo Apple ID en el iPhone nuevo, comprueba que iCloud está activado para Gasto (Ajustes › tu nombre › iCloud) e instala la app: tus gastos aparecen solos en unos segundos.</p>
+
+    <h3>¿Cómo cancelo la suscripción?</h3>
+    <p>En Gasto, ve a Ajustes › Gestionar suscripción. También puedes hacerlo desde los Ajustes del iPhone › tu nombre › Suscripciones. Sigues teniendo acceso hasta el final del periodo ya pagado.</p>
+
+    <h3>He cambiado de móvil y me pide suscribirme otra vez</h3>
+    <p>Abre Gasto › Ajustes › Restaurar compras con el mismo Apple ID con el que te suscribiste.</p>
+
+    <h3>No me llegan los avisos de cobro</h3>
+    <p>Revisa que las notificaciones de Gasto están permitidas en Ajustes › Notificaciones › Gasto, y que el gasto tiene un aviso configurado (sección «Recordatorio» al editar el gasto). Los avisos llegan a las 10:00.</p>
+
+    <h3>¿Puedo cambiar la moneda?</h3>
+    <p>Sí, en Ajustes › Moneda. Los importes no se convierten: solo cambia el símbolo con el que se muestran.</p>
+  </section>
+
+  <hr>
+
+  <section id="en" lang="en">
+    <h2>Support</h2>
+    <div class="card">
+      Have a question, a problem or an idea? Email me at
+      <a href="mailto:nader.yalal@gmail.com?subject=Gasto">nader.yalal@gmail.com</a>.
+      I usually reply within a day or two.
+    </div>
+
+    <h3>How do I move my data to a new iPhone?</h3>
+    <p>Gasto keeps a copy in your private iCloud. Sign in with the same Apple ID on the new iPhone, make sure iCloud is on for Gasto (Settings › your name › iCloud) and install the app: your expenses appear on their own within seconds.</p>
+
+    <h3>How do I cancel my subscription?</h3>
+    <p>In Gasto, go to Settings › Manage Subscription, or open iPhone Settings › your name › Subscriptions. You keep access until the end of the period you already paid for.</p>
+
+    <h3>I switched phones and it asks me to subscribe again</h3>
+    <p>Open Gasto › Settings › Restore Purchases using the same Apple ID you subscribed with.</p>
+
+    <h3>I'm not getting charge reminders</h3>
+    <p>Check that notifications are allowed in Settings › Notifications › Gasto, and that the expense has a reminder set (the Reminder section when editing it). Reminders arrive at 10:00.</p>
+
+    <h3>Can I change the currency?</h3>
+    <p>Yes, in Settings › Currency. Amounts are not converted; only the symbol changes.</p>
+  </section>
+
+  <footer>© 2026 Nader Yalal · <a href="privacidad.html">Política de privacidad · Privacy Policy</a></footer>
+</main>
+</body>
+</html>
